@@ -66,7 +66,7 @@ export class PainelComponent implements OnInit, OnDestroy {
       // diminuir a variável de tentativas
       this.tentativas--;
       if (this.tentativas < 0) {
-        alert('Acabaram as tentativas.');
+       // alert('Acabaram as tentativas.');
         this.emiteEncerrarJogo.emit('derrota');
       }
     }
